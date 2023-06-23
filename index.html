@@ -6,41 +6,25 @@
     <title>Знакомство с HTML</title>
 </head>
 <body>
-<form action="https://www.youtube.com/results">
-    <label for="search">Введите запрос</label>
-    <input type="text" name="search_query" id="search" required minlength="5">
-    <div>
-        <label for="agree">Согласен с обработкой данных</label>
-        <input type="checkbox" name="agree" id="agree">
-    </div>
-    <div>
-        <input type="radio" name="search" id="all" value="all">
-        <label for="all">Поиск повсюду</label>
-    </div>
-    <div>
-        <input type="radio" name="search" id="youtube" value="youtube">
-        <label for="youtube">Поиск по youtube</label>
-    </div>
-    <div>
-        <label for="topic">Тематика</label>
-        <select name="topic" id="topic">
-            <option value="0">Все</option>
-            <optgroup label="Популярные">
-            <option value="1">Разработка</option>
-            <option value="2">Квартиры</option>
-            <option value="3" selected>Работа</option>
-            </optgroup>
-        </select>
-    </div>
-    <div>
-        <label for="volume">Громкость</label>
-        <input type="range" name="range" id="volume" min="0" max="10" step="2">
-    </div>
-    <div>
-        <label for="comment">Комментарий</label>
-        <textarea name="comment" id="comment" cols="20" rows="5" placeholder="Введите текст"></textarea>
-    </div>
-    <button>Поиск</button>
+    <p>Свяжитесь со мной</p>
+<form action="#">
+<div>
+    <input type="email" name="email" id="" placeholder="Email" required>
+</div>
+<div>
+    <input type="text" name="telegram" id="" placeholder="Telegram" required>
+</div>
+<div>
+    <select name="select" id="">
+        <option value="courses">Приобретение курсов</option>
+        <option value="feedback">Вопрос</option>
+        <option value="coast" selected>Стоимость</option>
+    </select>
+</div>
+<div>
+    <textarea name="text" id="" cols="16" rows="1" placeholder="Комментарий"></textarea>
+</div>
+    <button>Отправить</button>
 </form>
 </body>
 </html>

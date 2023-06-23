@@ -6,49 +6,41 @@
     <title>Знакомство с HTML</title>
 </head>
 <body>
-<table>
-    <caption>Таблица расходов и доходов</caption>
-    <thead>
-        <tr>
-        <th>Год</th>
-        <th colspan="2">2023</th>
-        <th colspan="2">2024</th>
-        </tr>
-        <tr>
-            <th>Полугодие</th>
-            <th>1</th>
-            <th>2</th>
-            <th>1</th>
-            <th>2</th>
-        </tr>
-    </thead>
-    <tbody>
-       
-        <tr>
-            <td>Доход</td>
-            <td>1500$</td>
-            <td>1800$</td>
-            <td>2000$</td>
-            <td>3000$</td>
-        </tr>
-        <tr>
-            <td>Расход</td>
-            <td>-500$</td>
-            <td>-600$</td>
-            <td>-700$</td>
-            <td>-1000$</td>
-        </tr>
-        <tfoot>
-        <tr>
-            <td>Итог</td>
-            <td>1000$</td>
-            <td>1200$</td>
-            <td>1300$</td>
-            <td>2000$</td>
-        </tr>
-        </tfoot>
-    </tbody>
-
-</table>
+<form action="https://www.youtube.com/results">
+    <label for="search">Введите запрос</label>
+    <input type="text" name="search_query" id="search" required minlength="5">
+    <div>
+        <label for="agree">Согласен с обработкой данных</label>
+        <input type="checkbox" name="agree" id="agree">
+    </div>
+    <div>
+        <input type="radio" name="search" id="all" value="all">
+        <label for="all">Поиск повсюду</label>
+    </div>
+    <div>
+        <input type="radio" name="search" id="youtube" value="youtube">
+        <label for="youtube">Поиск по youtube</label>
+    </div>
+    <div>
+        <label for="topic">Тематика</label>
+        <select name="topic" id="topic">
+            <option value="0">Все</option>
+            <optgroup label="Популярные">
+            <option value="1">Разработка</option>
+            <option value="2">Квартиры</option>
+            <option value="3" selected>Работа</option>
+            </optgroup>
+        </select>
+    </div>
+    <div>
+        <label for="volume">Громкость</label>
+        <input type="range" name="range" id="volume" min="0" max="10" step="2">
+    </div>
+    <div>
+        <label for="comment">Комментарий</label>
+        <textarea name="comment" id="comment" cols="20" rows="5" placeholder="Введите текст"></textarea>
+    </div>
+    <button>Поиск</button>
+</form>
 </body>
 </html>

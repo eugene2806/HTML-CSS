@@ -3,28 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Знакомство с HTML</title>
 </head>
 <body>
-    <p>Свяжитесь со мной</p>
+    <main>
+    <h1>Свяжитесь со мной</h1>
 <form action="#">
-<div>
-    <input type="email" name="email" id="" placeholder="Email" required>
+<div class="field">
+    <img src="images/message.svg" alt="">
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email" placeholder="Email" required>
 </div>
-<div>
-    <input type="text" name="telegram" id="" placeholder="Telegram" required>
+<div class="field">
+    <img src="images/telegram.svg" alt="">
+    <label for="telegram">Telegram</label>
+    <input type="text" name="telegram" id="telegram" placeholder="Telegram" required>
 </div>
-<div>
-    <select name="select" id="">
+<div class="field">
+    <img src="images/topic.svg" alt="">
+    <label for="select">Тема</label>
+    <select name="select" id="select">
         <option value="courses">Приобретение курсов</option>
-        <option value="feedback">Вопрос</option>
+        <option value="feedback">Обратная связь</option>
         <option value="coast" selected>Стоимость</option>
     </select>
 </div>
-<div>
-    <textarea name="text" id="" cols="16" rows="1" placeholder="Комментарий"></textarea>
+<div class="field">
+    <label class="comment" for="text">Комментарий</label>
+    <textarea name="text" id="text" cols="16" rows="5" placeholder="Комментарий"></textarea>
 </div>
     <button>Отправить</button>
 </form>
+</main>
 </body>
 </html>

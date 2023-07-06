@@ -89,24 +89,26 @@ button:hover {
     width: 200px;
     height: 200px;
     margin: 20px;
-    transition: transform 2s;
-    
-    
-}
-
-.test div:nth-child(1):hover {
-   transform: rotate(45deg);
-}
-
-.test div:nth-child(2):hover {
-    transform: scale(1.2, 1.2);
-}
-
-.test div:nth-child(3) {
-    transform: translateX(50px);
+    /* transition: transform 2s; */
+    animation: my-move 3s ease;
     
 }
 
-.test div:nth-child(4):hover {
-    transform: skew(10deg);
+@keyframes my-move {
+    25% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(100%) translateY(-100%);
+    }
+    75% {
+        transform: translateX(0%) translateY(-100%);
+    }
+    100% {
+        transform: translateX(0%) translateY(0%);
+    }
 }
+
+/* .test:hover div {
+    transform: translateX(100%);
+} */

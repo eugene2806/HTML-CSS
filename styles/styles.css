@@ -89,20 +89,24 @@ button:hover {
     width: 200px;
     height: 200px;
     margin: 20px;
-    transition: padding-left 2s;
+    transition: transform 2s;
+    
+    
 }
 
 .test div:nth-child(1):hover {
-    padding-left: 400px;
-    transition-timing-function: ease-in;
+   transform: rotate(45deg);
 }
 
 .test div:nth-child(2):hover {
-    padding-left: 400px;
-    transition-timing-function: ease-out;
+    transform: scale(1.2, 1.2);
 }
 
-.test div:nth-child(3):hover {
-    padding-left: 400px;
-    transition-timing-function: linear;
+.test div:nth-child(3) {
+    transform: translateX(50px);
+    
+}
+
+.test div:nth-child(4):hover {
+    transform: skew(10deg);
 }
